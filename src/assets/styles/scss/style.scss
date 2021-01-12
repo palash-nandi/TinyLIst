@@ -1,0 +1,221 @@
+// If you want to override variables do it here
+@import "variables";
+
+// Import styles
+@import "~@coreui/coreui/scss/coreui.scss";
+
+// Temp fix for reactstrap
+@import '~@coreui/coreui/scss/_dropdown-menu-right.scss';
+
+// If you want to add something do it here
+@import "custom";
+
+// ie fixes
+@import "ie-fix";
+
+.loginPgBg {
+	background-image: linear-gradient(90deg, #ff409f 0%, #5f42aa 100%) !important;
+	align-items: center;
+	flex-direction: row;
+}
+
+.loginPgContent {
+	max-width: 940px;
+	margin: 0 auto;
+	padding-top:25px;
+	background: #fff;
+	border-radius: 8px;
+	box-shadow: 1px 1px 10px 5px rgba(85, 61, 61, 0.35); 
+}
+
+.company-logo {
+	height: 70px;
+	margin: 0 auto;
+	display: block;
+}
+
+.loginPgContent .card-group {
+	background: #fff;
+	border-radius: 8px;
+	color: #5f42aa;
+	padding: 25px 5px 30px;
+}
+
+.loginPgBg .card {
+	border: 0;
+	background: #fff;
+}
+
+.loginPgBg .card:first-child {
+	border-right: 1px solid #9175e0;
+}
+
+.loginPgBg .card .card-body {
+	padding: 1rem 1.25rem 1.25rem;
+}
+
+.loginPgBg h2 {
+	color: #5f42aa;
+	font-family: LemonMilk;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+	font-weight: 500;
+	margin-bottom: 6px;
+	font-size: 25px;
+}
+
+.loginPgBg .did-you-know-txt {
+	margin-bottom: 20px;
+}
+
+.loginPgBg .carousel {
+	position: relative;
+	background: #6f57b3;
+	color: #fff !important;
+	padding: 18px;
+	border-radius: 5px;
+	min-height: 205px;
+}
+
+.loginPgBg .carousel-caption {
+	position: relative;
+	right: auto;
+	left: auto;
+	padding-bottom: 15px;
+	text-align: left;
+}
+
+.loginPgBg .carousel-caption h3 {
+	font-size: 21px;
+	letter-spacing: 0.5px;
+	margin-bottom: 10px;
+}
+
+.loginPgBg .carousel-caption p {
+	font-size: 16.5px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	line-height: 1.7;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	line-height: 26px;     /* fallback */
+	max-height: 130px;      /* fallback */
+	-webkit-line-clamp: 5; /* number of lines to show */
+	-webkit-box-orient: vertical;
+}
+
+.loginPgBg .carousel-indicators {
+	bottom: -2px;
+}
+
+.loginPgBg .carousel-indicators li {
+	width: 10px;
+	height: 10px;
+	background-color: #fff;
+	border-radius: 50%;
+}
+
+.loginPgBg .btn-link {
+	color: #5f42aa;
+	text-decoration: none !important;
+	font-size: 14px;
+	letter-spacing: 0.5px;
+}
+
+.loginPgBg .BtnPurple {
+	padding: 6px 24px;
+	letter-spacing: 1.5px;
+	margin-top: 17px;
+	font-size: 15px;
+}
+
+.card-group > .card {
+	margin-bottom: 0;
+}
+
+.login-footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: #fff;
+	max-width: 940px;
+	margin: 12px auto 10px;
+}
+
+.login-footer * {
+	letter-spacing: 0.5px;
+	font-size: 14px;
+}
+
+.requestInviteContent {
+	max-width: 720px;
+	padding-top: 0;
+}
+
+.requestInviteContent .card:first-child {
+	border-right: 0;
+}
+
+.requestInviteContent .card-group {
+	padding: 0 !important;
+}
+
+.currentlyInviteOnlyTxt {
+	font-size: 22px;
+	margin: 20px 0 22px;
+	padding-bottom: 12px;
+	border-bottom: 1px solid rgba(0,0,0,0.06);
+	text-align: center;
+	color: #3c4b64;
+	letter-spacing: 0.5px;
+}
+
+.requestInviteContent .BtnPurple {
+	margin-top: 8px;
+}
+
+// media styles 
+@media all and (min-width:768px) and (max-width: 991.98px) {
+	.loginPgBg .carousel {
+		min-height: 235px;
+	}
+}
+
+@media all and (max-width: 767.98px) {
+	.loginPgBg .card-group {
+		padding: 8px 5px 10px;
+	}
+
+	.company-logo {
+		margin: 0 auto 12px;
+		height: 62px;
+	}
+
+	.loginPgBg h2 {
+		font-size: 21px;
+	}
+}
+
+@media all and (max-width: 575.98px) {
+	.loginPgBg .card-group {
+		padding: 8px 0 10px;
+	}
+
+	.login-footer {
+		align-items: flex-start;
+	}
+
+	.login-footer * {
+		font-size: 12px;
+		letter-spacing: 0.2px;
+	}
+
+	.SocialLinksFooter {
+		margin-top: 5px;
+	}
+
+	.currentlyInviteOnlyTxt {
+		font-size: 18px;
+	}
+}

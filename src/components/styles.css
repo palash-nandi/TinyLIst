@@ -1,0 +1,11 @@
+.head {
+    /* width: 100%; */
+    background-color: #eb5757 !important;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .head {
+      align-items: center;
+      justify-content: center
+    }
+}
